@@ -25,14 +25,11 @@ img {
     width: 12vh;
     font-size: 5vh;
 }
-#imageTable {
+#imageDiv {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    tr {
-        display: flex;
-        flex-direction: row;
-    }
+    flex-wrap: wrap;
 }
 button {
     width: 10vh;

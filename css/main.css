@@ -31,16 +31,13 @@ img {
   font-size: 5vh; }
 
 /* line 28, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
-#imageTable {
+#imageDiv {
   display: flex;
   justify-content: center;
-  flex-direction: row; }
-  /* line 32, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
-  #imageTable tr {
-    display: flex;
-    flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: wrap; }
 
-/* line 37, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+/* line 34, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
 button {
   width: 10vh;
   height: 8vh;

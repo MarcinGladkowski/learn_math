@@ -5,6 +5,7 @@
 $(function(){
 //    loadRandom();
     $('#clickMe').on('click',function(){
+        removeAnimals();
         loadRandom();
     });
 });
@@ -19,18 +20,21 @@ function loadRandom(){
     console.log(randLoad);
     
     while(ranNums.length < randLoad){
-        var n =Math.floor((Math.random()*10)+1);
+        var n =Math.floor((Math.random()*20)+1);
             ranNums.push(n);
     }
     var i=0;
-//    add images
-    var imgS = $('#imageTable > tbody > tr > td > img');
-    imgS.each(function(){
-        $(this).attr('src','images/svg/'+ranNums[i]+'.svg');
-        i++;
-    });
-//    imgS.fadeIn(500);
+
+    for (var i = 0; i < randLoad; i++) {
+    var img = $('<img id="icon">');
+    img.attr('src', 'images/svg/'+ranNums[i]+'.svg');
+    img.appendTo('#imageDiv').css('display', 'flex')
+}
+
     
+}
+function removeAnimals (){
+    $("#imageDiv").empty();
 }
 
 var buttons = $('button');
