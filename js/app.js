@@ -10,8 +10,7 @@ $(function(){
 //    });
 });
 var randLoad = 0;
-//var imgS = $('#imageTable > tbody > tr > td > img');
-//imgS.css('display'; 'none');
+
 
 function loadRandom(){
     var ranNums=[];
@@ -20,7 +19,7 @@ function loadRandom(){
     console.log(randLoad);
     
     while(ranNums.length < randLoad){
-        var n =Math.floor((Math.random()*20)+1);
+        var n =Math.floor((Math.random()*30)+1);
             ranNums.push(n);
     }
     var i=0;
@@ -43,30 +42,45 @@ buttons.each(function(i){
     });
 
 var points = 0;
+var countBad = 0;
+var countGood = 0;
 
 buttons.on("click", function(){
         var a = $(this).attr('index');
         var container = $('#imageDiv');
-        console.log(container);
-        console.log(a);
-        console.log('przycisk działa');
+    
              if ( a == randLoad) {
-                 
-                 container.animate(
+//            good choice     
+            container.animate(
             {'top': '+=100px'}, 100).animate(
             {'top': '-=100px'}, 100);
                  
+//            reflesh animals (remove and load)
             removeAnimals();
             loadRandom();   
+                 
             points += 1;
-            console.log(points);
+            countGood += 1;
+//            write points in div
             $('#points').text('Twoje punkty:'+points);
-                 
+             if (countGood > 10) {
+                 alert('GRATULACJE - skończyłeś grę. Twoje punkty to:'+points);
+              }
              } else {
-                 
-               container.animate(
+//            bad choice  
+            container.animate(
             {'left': '+=100px'}, 100).animate(
             {'left': '-=100px'}, 100);
-                 
-    }
+//           3 time bad choise - delete points 
+            countBad += 1;
+            if (countBad > 3) {
+                alert('postaraj się bardziej - Twoje punkty zostały anulowane');
+                countBad = 0;
+                points = 0;
+                $('#points').text('Twoje punkty:'+points);
+            } 
+        }
+           
+//    end else
+    
 });

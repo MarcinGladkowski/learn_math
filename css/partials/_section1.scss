@@ -1,0 +1,63 @@
+img {
+    height: 13vh;
+    width: 13vh;
+} 
+#ans {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+    ul {
+        display: flex;
+    }
+}
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    #my_image {
+        display: flex;
+    }
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    position: relative;
+    text-align: center;
+}
+#clickMe {
+    display: flex;
+    height: 8vh;
+    width: 15vh;
+    font-size: 5vh;
+}
+#imageDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70vw;
+    position: relative;
+}
+
+button {
+    width: 10vh;
+    height: 8vh;
+    font-size: 5vh;
+}
+#text {
+    display: flex;
+    justify-content: center;
+    p {
+        font-size: 2em;
+    }
+}
+#points {
+    width:22vh; 
+    height: 13vh; 
+    font-size: 5vh;
+    background-color: brown; 
+    color: white;
+}
