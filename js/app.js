@@ -1,18 +1,13 @@
-//Wybor losowego obrazka z folderu:
-//var randImg = Math.floor((Math.random()*10)+1);
-//$('#my_image').attr('src', './images/svg/' + randImg + '.svg').css('height', '10vh');
 
+//load functions
 $(function(){
-    loadRandom();
-//    $('#clickMe').on('click',function(){
-//        removeAnimals();
-//        loadRandom();
-//    });
+    game1();
+
 });
+
+
 var randLoad = 0;
-
-
-function loadRandom(){
+function game1(){
     var ranNums=[];
 //    random quantity of elements
     randLoad = Math.floor((Math.random() * 10) + 1);
@@ -31,6 +26,7 @@ function loadRandom(){
 }
 
 }
+//end game1
 function removeAnimals (){
     $("#imageDiv").empty();
 }
@@ -57,14 +53,20 @@ buttons.on("click", function(){
                  
 //            reflesh animals (remove and load)
             removeAnimals();
-            loadRandom();   
+            game1();   
                  
             points += 1;
             countGood += 1;
 //            write points in div
             $('#points').text('Twoje punkty:'+points);
-             if (countGood > 10) {
+             if (countGood == 10) {
                  alert('GRATULACJE - skończyłeś grę. Twoje punkty to:'+points);
+//               reflesh animals (remove and load)
+                 removeAnimals();
+                 game1();
+                 points = 0;
+                 $('#points').text('Twoje punkty:'+points);
+                 
               }
              } else {
 //            bad choice  
