@@ -1,0 +1,41 @@
+body {
+    margin: 0 auto;
+    background-color: $color-primary-1;
+}
+.mainWidth {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px dotted red;
+}
+img {
+    height: 13vh;
+    width: 13vh;
+} 
+#ans {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+    ul {
+        display: flex;
+    }
+}
+#clickMe {
+    height: 8vh;
+    width: 12vh;
+    font-size: 5vh;
+}
+#imageTable {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    tr {
+        display: flex;
+        flex-direction: row;
+    }
+}
+button {
+    width: 10vh;
+    height: 8vh;
+    font-size: 5vh;
+}
