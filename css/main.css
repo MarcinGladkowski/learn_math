@@ -10,37 +10,75 @@ body {
   margin: 0 auto;
   border: 1px dotted red; }
 
-/* line 11, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+/* line 12, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
 img {
   height: 13vh;
   width: 13vh; }
 
-/* line 15, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+/* line 16, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
 #ans {
   display: flex;
   justify-content: center;
   flex-direction: row; }
-  /* line 19, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+  /* line 20, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
   #ans ul {
     display: flex; }
 
-/* line 23, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+/* line 24, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+#head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  /* line 29, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+  #head #my_image {
+    display: flex; }
+
+/* line 33, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  position: relative;
+  text-align: center; }
+
+/* line 41, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
 #clickMe {
+  display: flex;
   height: 8vh;
-  width: 12vh;
+  width: 15vh;
   font-size: 5vh; }
 
-/* line 28, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+/* line 47, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
 #imageDiv {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 70vw;
+  position: relative; }
 
-/* line 34, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+/* line 56, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
 button {
   width: 10vh;
   height: 8vh;
   font-size: 5vh; }
+
+/* line 61, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+#text {
+  display: flex;
+  justify-content: center; }
+  /* line 64, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+  #text p {
+    font-size: 2em; }
+
+/* line 68, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+#points {
+  width: 22vh;
+  height: 13vh;
+  font-size: 5vh;
+  background-color: brown;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */

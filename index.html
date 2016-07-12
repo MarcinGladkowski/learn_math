@@ -15,14 +15,21 @@
    
 <div class='mainWidth'>
 
-<div id="putimages">
-    <img id="my_image" src='images/svg/blackboard.png'></img>
-</div>
-    
-<input type='button' id='clickMe' value='Next' />
-<div id='imageDiv'>
 
+<div id='head'>
+   <img id="my_image" src='images/svg/blackboard.png'></img>
+<!--   <input type='button' id='clickMe' value='Losuj' />-->
+    <div id='points'></div>
 </div>
+
+<div id='container'>
+   <div id='imageDiv'>
+<!--place to create random elements-->
+   </div>
+</div>
+   
+    <div id='text'><p>Wybierz numer odpowiadający ilości wylosowanych elementów</p></div>
+    
   <div id='ans'>
    <ul>
     <li><button>1</button></li>
@@ -37,6 +44,7 @@
     <li><button>10</button></li>
   </ul>
  </div>
+ 
 </div> 
 <script src="./js/jquery-2.2.4.js" type="text/javascript"></script>
 <script src="./js/app.js" type="text/javascript"></script>

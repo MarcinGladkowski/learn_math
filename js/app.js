@@ -3,11 +3,11 @@
 //$('#my_image').attr('src', './images/svg/' + randImg + '.svg').css('height', '10vh');
 
 $(function(){
-//    loadRandom();
-    $('#clickMe').on('click',function(){
-        removeAnimals();
-        loadRandom();
-    });
+    loadRandom();
+//    $('#clickMe').on('click',function(){
+//        removeAnimals();
+//        loadRandom();
+//    });
 });
 var randLoad = 0;
 //var imgS = $('#imageTable > tbody > tr > td > img');
@@ -28,10 +28,9 @@ function loadRandom(){
     for (var i = 0; i < randLoad; i++) {
     var img = $('<img id="icon">');
     img.attr('src', 'images/svg/'+ranNums[i]+'.svg');
-    img.appendTo('#imageDiv').css('display', 'flex')
+    img.appendTo('#imageDiv').css('display', 'flex').css('height', '15vh');
 }
 
-    
 }
 function removeAnimals (){
     $("#imageDiv").empty();
@@ -43,13 +42,31 @@ buttons.each(function(i){
        $(this).attr('index', i + 1);
     });
 
+var points = 0;
+
 buttons.on("click", function(){
         var a = $(this).attr('index');
+        var container = $('#imageDiv');
+        console.log(container);
         console.log(a);
         console.log('przycisk działa');
              if ( a == randLoad) {
-                 alert('Jesteś świetny!');
+                 
+                 container.animate(
+            {'top': '+=100px'}, 100).animate(
+            {'top': '-=100px'}, 100);
+                 
+            removeAnimals();
+            loadRandom();   
+            points += 1;
+            console.log(points);
+            $('#points').text('Twoje punkty:'+points);
+                 
              } else {
-                 alert('Spróbuj jeszcze raz');
-             }
+                 
+               container.animate(
+            {'left': '+=100px'}, 100).animate(
+            {'left': '-=100px'}, 100);
+                 
+    }
 });
