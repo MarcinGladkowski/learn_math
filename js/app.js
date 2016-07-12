@@ -82,45 +82,59 @@ buttons.on("click", function(){
         }
 
 });
-//53 x 45 fotele
+//53 x 45 fotele  , '*', '/'
 //game2  
-var  results = [],
-    option = ['+', '-', '*', '/'],
+var option = ['+', '-'],
     operation = function(v1,v2, action) {
       switch(action) {
           case '+': return v1 + v2; 
               break;
           case '-': return v1 - v2; 
               break;
-          case '*': return v1 * v2; 
-              break;
-          case '/': return v1 / v2; 
-              break;
+//          case '*': return v1 * v2; 
+//              break;
+//          case '/': return v1 / v2; 
+//              break;
     }
 };
+var val1 = 0;
+var val2 = 0;
+var oper = 0;
+var summary;
+
 function game2() {
     
     var val1 = Math.floor((Math.random() * 10) + 1);
     var val2 = Math.floor((Math.random() * 10) + 1);
-    var oper = Math.floor(Math.random()*option.length) % 4;
+    var oper = Math.floor((Math.random() *  option.length));
 
     var container = $('#box1');
     var lbl = $('#action');
     
     lbl.text(val1 + ' ' + option[oper] + ' ' + val2 + ' = ');
     
-    var btn = $('#countBtn');
-    var result = $('#result');
+    summary = (operation(val1, val2, option[oper]));
     
-    btn.on('click', function() { 
-            if(operation(val1, val2, option[oper]) == result.val()) {
-                console.log('dobrze');
-            } else {
-                 console.log('źle');
-            }
-//        game2(); 
-
-    });
+    console.log('Wynik działania: ' + summary);
 
 }
-    
+function removeNumber (){
+    $("#result").empty();
+}
+
+
+
+var btn = $('#countBtn');
+var result = $('#result');
+
+btn.on('click', function() { 
+    console.log('Wpisany wynik: ' + result.val());
+    console.log(summary);
+       if (summary == result.val() ) {
+           console.log('super');
+       } else {console.log('błąd');}
+    removeNumber();
+    game2(); 
+
+});
+
