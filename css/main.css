@@ -98,29 +98,40 @@ button {
 
 /* line 8, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #box1 {
-  width: 35vh;
+  width: 52vh;
   height: 13vh;
   background: none;
-  border: 1px dotted red; }
-
-/* line 14, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
-#icons1 {
-  display: flex;
-  justify-content: center; }
-
-/* line 18, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
-#icons2 {
-  display: flex;
-  justify-content: center; }
-
-/* line 22, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
-#container2 {
+  border: 1px dotted red;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 60vh; }
+  justify-content: center; }
 
-/* line 28, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 17, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+#icons1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 1px dotted blue; }
+
+/* line 23, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+#icons2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 1px dotted blue; }
+
+/* line 29, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+#container2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  position: relative;
+  text-align: center;
+  border: 1px dotted red; }
+
+/* line 39, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #sign {
   display: flex;
   justify-content: center; }

@@ -118,16 +118,15 @@ function game2() {
     var lbl = $('#action');
     lbl.text(val1 + ' ' + option[oper] + ' ' + val2 + ' = ');
     
-    summary = (operation(val1, val2, option[oper]));
+//    summary = (operation(val1, val2, option[oper]));
     
-    console.log('Wynik działania: ' + summary);
+    
     console.log('val1: ' + val1);
     console.log('val2: ' + val2);
     console.log('oper(1 = -)(0 = +): ' + oper);
     
 //    action substrication
-    if ( val1 < val2 ) {
-        console.log('odejmowanie');
+    if (( oper == 1 ) && (val1 < val2))    {
       [val1, val2] = [val2, val1];
         console.log('val1 (-): ' + val1);
         console.log('val2 (-): ' + val2);
@@ -138,6 +137,9 @@ function game2() {
     val2;
     console.log('val1 po if: ' + val1);
     console.log('val2 po if: ' + val2);
+    
+    summary = (operation(val1, val2, option[oper]));
+    console.log('Wynik działania: ' + summary);
     
     lbl.text(val1 + ' ' + option[oper] + ' ' + val2 + ' = ');
 //    display icons row 1
@@ -180,8 +182,19 @@ btn.on('click', function() {
     console.log('Wpisany wynik: ' + result.val());
     console.log(summary);
        if (summary == result.val() ) {
-           console.log('super');
-       } else {console.log('błąd');}
+           console.log('Dobra odpowiedź');
+           $('#icons1').animate(
+            {'top': '-=100px'}, 100).animate(
+            {'top': '+=100px'}, 100);
+           $('#icons2').animate(
+            {'top': '-=100px'}, 100).animate(
+            {'top': '+=100px'}, 100);
+       } else {
+           console.log('Zła odpowiedź');
+           $('#icons1').animate({'left': '+=100px'}, 100).animate({'left': '-=100px'}, 100);
+           $('#icons2').animate({'left': '+=100px'}, 100).animate({'left': '-=100px'}, 100);
+       
+       }
     removeNumber();
     removeElemens();
     game2(); 

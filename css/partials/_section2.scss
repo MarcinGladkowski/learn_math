@@ -6,24 +6,35 @@
 //    background-color: $color-primary-4;
 }
 #box1 {
-    width: 35vh;
+    width: 52vh;
     height: 13vh;
     background: none;
     border: 1px dotted red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #icons1 {
     display: flex;
     justify-content: center;
+    position: relative;
+    border: 1px dotted blue;
 }
 #icons2 {
     display: flex;
     justify-content: center;
+    position: relative;
+    border: 1px dotted blue;
 }
 #container2 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    position: relative;
+    text-align: center;
+    border: 1px dotted red;
 }
 #sign {
     display: flex;
