@@ -8,7 +8,7 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  border: 1px dotted red; }
+  border: 1px dotted green; }
 
 /* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
 #game1 {
@@ -92,14 +92,37 @@ button {
 /* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #game2 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 100vh; }
 
-/* line 7, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 8, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #box1 {
   width: 35vh;
   height: 13vh;
   background: none;
   border: 1px dotted red; }
+
+/* line 14, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+#icons1 {
+  display: flex;
+  justify-content: center; }
+
+/* line 18, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+#icons2 {
+  display: flex;
+  justify-content: center; }
+
+/* line 22, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+#container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh; }
+
+/* line 28, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+#sign {
+  display: flex;
+  justify-content: center; }
 
 /*# sourceMappingURL=main.css.map */
