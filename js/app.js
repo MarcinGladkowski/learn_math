@@ -103,32 +103,54 @@ var option = ['+', '-'],
 };
 var val1 = 0;
 var val2 = 0;
-var oper = 0;
+var oper;
 var summary;
 
 function game2() {
     var val1Array=[];
     var val2Array=[];
-    var val1 = Math.floor((Math.random() * 10) + 1);
-    var val2 = Math.floor((Math.random() * 10) + 1);
-    var oper = Math.floor((Math.random() *  option.length));
+    
+    val1 = Math.floor((Math.random() * 10) + 1);
+    val2 = Math.floor((Math.random() * 10) + 1);
+    oper = Math.floor((Math.random() *  option.length));
+    
     var container = $('#box1');
     var lbl = $('#action');
     lbl.text(val1 + ' ' + option[oper] + ' ' + val2 + ' = ');
+    
     summary = (operation(val1, val2, option[oper]));
+    
     console.log('Wynik działania: ' + summary);
+    console.log('val1: ' + val1);
+    console.log('val2: ' + val2);
+    console.log('oper(1 = -)(0 = +): ' + oper);
+    
+//    action substrication
+    if ( val1 < val2 ) {
+        console.log('odejmowanie');
+      [val1, val2] = [val2, val1];
+        console.log('val1 (-): ' + val1);
+        console.log('val2 (-): ' + val2);
+        val1;
+        val2;
+    }
+    val1;
+    val2;
+    console.log('val1 po if: ' + val1);
+    console.log('val2 po if: ' + val2);
+    
+    lbl.text(val1 + ' ' + option[oper] + ' ' + val2 + ' = ');
 //    display icons row 1
      while(val1Array.length < val1){
         var n =Math.floor((Math.random()*30)+1);
             val1Array.push(n);
     }
-    var i=0;
-
     for (var i = 0; i < val1; i++) {
     var img = $('<img id="icon">');
     img.attr('src', 'images/svg2/'+val1Array[i]+'.svg');
     img.appendTo('#icons1').css('display', 'flex').css('height', '15vh');
 }
+//    sign between rows
     if (oper == 0) {
         $('#sign').text('+');
     } 
@@ -140,21 +162,16 @@ function game2() {
         var n =Math.floor((Math.random()*30)+1);
             val2Array.push(n);
     }
-    var i=0;
-
     for (var i = 0; i < val2; i++) {
     var img = $('<img id="icon">');
     img.attr('src', 'images/svg2/'+val2Array[i]+'.svg');
     img.appendTo('#icons2').css('display', 'flex').css('height', '15vh');
 }
     
-
 }
 function removeNumber (){
     $("#result").empty();
 }
-
-
 
 var btn = $('#countBtn');
 var result = $('#result');
