@@ -3,31 +3,38 @@ console.log('działa!');
 //load functions
 $(function(){
     game1();
-    game2();
+    game2(); 
 });
-$(window).on('scroll', zmiana);
+    
+$(window).on('scroll', sticky);
 //sticky nav
 var nav = $('nav');
 var top = nav.offset().top;
-console.log(nav);
-console.log(top);
-//Punkt 3 + 4
-function zmiana () {
+
+function sticky () {
     var scrollT = $(document).scrollTop();
     if( scrollT > top) {
     nav.addClass('sticky')
-//    $('body').addClass('z-index');
   } else {
     nav.removeClass('sticky');
-//    $('body').addClass('z-index');
   }
 };
 
-function scrollSec2() {
-    var game2pos = $('#game2').offset().top;
+function dyplom() {
+    var dyp = $('#dyplom');
+    var dyplom = $('<div>');
+    dyplom.attr('class', 'dyplom');
+    dyplom.appendTo(dyp).css('display', 'flex').text('Gratulacje');
 }
-    
-    
+function earse(){
+   $('#error' + countBad).hide('slow');
+}
+function earseShow(){
+    for (var i=1; i<4; i++) {
+        $('#error' + i).show('slow');
+    }
+   
+}
 var randLoad = 0;
 function game1(){
     
@@ -104,12 +111,9 @@ buttons.on("click", function(){
             container.animate({'left': '+=100px'}, 100).animate({'left': '-=100px'}, 100);
 //           3 time bad choise - delete points 
             countBad += 1;
-            if (countBad > 3) {
-                alert('postaraj się bardziej - Twoje punkty zostały anulowane');
-                countBad = 0;
-                points = 0;
-                $('#points').text(points);
-            } 
+//             remove earse
+            earse();   
+            endGame();
         }
 
 });
@@ -238,6 +242,15 @@ btn.on('click', function() {
 //                  add professor logo
                  $('#level').attr('class', 'level2');
              }
+             if (countGood == 3) {
+                 console.log('dyplom');
+//               create dyplom
+                 dyplom();
+                 $('body').animate({
+                    scrollTop: $("#dyplom").offset().top
+                }, 2000);
+                nav.hide('slow');
+             }
            
     removeNumber();
     removeElements();
@@ -254,13 +267,32 @@ btn.on('click', function() {
            
     } 
     else {
+//      3 time bad choise - delete points 
+        countBad += 1;
+//      remove earse
+        earse();
+        
+        endGame()
+        
         console.log('Zła odpowiedź');
            $('#icons1').animate({'left': '+=100px'}, 100).animate({'left': '-=100px'}, 100);
         $('#icons1').animate({'right': '+=100px'}, 100).animate({'right': '-=100px'}, 100);
            $('#icons2').animate({'left': '+=100px'}, 100).animate({'left': '-=100px'}, 100);
     }
-    
-
+//end button 2
 });
+
+function endGame(){
+    if (countBad > 3) {
+        countBad = 0;
+        points = 0;
+        $('#points').text(points);
+        alert('Zacznij jeszcze raz');
+        console.log('Game over')
+        game1();
+        game2(); 
+        earseShow();
+    }
+}    
 
 })

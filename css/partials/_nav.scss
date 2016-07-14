@@ -27,11 +27,22 @@ nav {
     background-position: center center;
     background-repeat: no-repeat;
 }
+#lives {
+    width: 60vh;
+    height: 20vh;
+//    border: 1px dotted red;
+    display: flex;
+    align-items: center;
+    img {
+        width: 20vh;
+        height: 20vh;
+    }
+}
 #points {
     width: 20vh; 
     height: 20vh; 
     font-size: 8vh;
-    background-color: orange; 
+    background-color: #FAE100; 
     color: white;
     display: flex;
     justify-content: center;

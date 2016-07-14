@@ -51,17 +51,28 @@ nav {
   background-repeat: no-repeat; }
 
 /* line 30, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+#lives {
+  width: 60vh;
+  height: 20vh;
+  display: flex;
+  align-items: center; }
+  /* line 36, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+  #lives img {
+    width: 20vh;
+    height: 20vh; }
+
+/* line 41, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 #points {
   width: 20vh;
   height: 20vh;
   font-size: 8vh;
-  background-color: orange;
+  background-color: #FAE100;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center; }
 
-/* line 40, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 51, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 .level {
   width: 20vh;
   height: 20vh;
@@ -70,7 +81,7 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
 
-/* line 49, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 60, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 .level1 {
   width: 20vh;
   height: 20vh;
@@ -79,7 +90,7 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
 
-/* line 58, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 69, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 .level2 {
   width: 20vh;
   height: 20vh;
@@ -88,7 +99,7 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
 
-/* line 67, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 78, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 .sticky {
   position: fixed;
   z-index: 1;
@@ -274,5 +285,25 @@ input[type="text"] {
   /* line 78, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
   input[type="text"].focus {
     border: solid 5px #969696; }
+
+/* line 82, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+.dyplom {
+  width: 50vh;
+  height: 30vh;
+  background-image: url("../images/levels/diploma-3.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em; }
+
+/* line 95, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+#dyplom {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 /*# sourceMappingURL=main.css.map */
