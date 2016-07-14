@@ -12,18 +12,33 @@ nav {
 #option2 {
     width: 20vh;
     height: 20vh;
-    border: 1px solid red;
+    border: 1px dotted red;
+    background-image: url("../images/levels/blackboard.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 #option1 {
     width: 20vh;
     height: 20vh;
-    border: 1px solid red;
-    background-image: url('./images/svg/blackboard.png');
+    border: 1px dotted red;
+    background-image: url("../images/levels/abacus.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 #points {
     width: 20vh; 
     height: 20vh; 
-    font-size: 5vh;
+    font-size: 8vh;
     background-color: brown; 
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#level {
+    width: 20vh;
+    height: 20vh;
+    border: 1px dotted green;
 }

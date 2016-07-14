@@ -60,7 +60,7 @@ buttons.on("click", function(){
             points += 1;
             countGood += 1;
 //            write points in div
-            $('#points').text('Twoje punkty:'+points);
+            $('#points').text(points);
              if (countGood == 10) {
                  alert('GRATULACJE - skończyłeś grę. Twoje punkty to:'+points);
 //               reflesh animals (remove and load)

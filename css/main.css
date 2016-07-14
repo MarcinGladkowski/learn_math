@@ -37,22 +37,38 @@ nav {
 #option2 {
   width: 20vh;
   height: 20vh;
-  border: 1px solid red; }
+  border: 1px dotted red;
+  background-image: url("../images/levels/blackboard.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
-/* line 17, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 21, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 #option1 {
   width: 20vh;
   height: 20vh;
-  border: 1px solid red;
-  background-image: url("/images/svg/blackboard.png"); }
+  border: 1px dotted red;
+  background-image: url("../images/levels/abacus.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
-/* line 23, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 30, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 #points {
   width: 20vh;
   height: 20vh;
-  font-size: 5vh;
+  font-size: 8vh;
   background-color: brown;
-  color: white; }
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 40, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+#level {
+  width: 20vh;
+  height: 20vh;
+  border: 1px dotted green; }
 
 /* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
 body {
