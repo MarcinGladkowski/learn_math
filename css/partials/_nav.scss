@@ -1,0 +1,29 @@
+nav {
+    height: 30vh;
+    background-color: #FFEA2F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#points {
+    padding: 1vh;
+}
+#option2 {
+    width: 20vh;
+    height: 20vh;
+    border: 1px solid red;
+}
+#option1 {
+    width: 20vh;
+    height: 20vh;
+    border: 1px solid red;
+    background-image: url('./images/svg/blackboard.png');
+}
+#points {
+    width: 20vh; 
+    height: 20vh; 
+    font-size: 5vh;
+    background-color: brown; 
+    color: white;
+}

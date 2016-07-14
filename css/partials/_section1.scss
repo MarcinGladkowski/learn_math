@@ -26,7 +26,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 30vh;
     position: relative;
     text-align: center;
 }
@@ -68,11 +68,4 @@ button {
         display: flex;
         font-size: 2em;
     }
-}
-#points {
-    width:22vh; 
-    height: 13vh; 
-    font-size: 5vh;
-    background-color: brown; 
-    color: white;
 }

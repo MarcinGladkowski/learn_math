@@ -67,7 +67,7 @@ buttons.on("click", function(){
                  removeAnimals();
                  game1();
                  points = 0;
-                 $('#points').text('Twoje punkty:'+points);
+                 $('#points').text(points);
                  
               }
              } else {
@@ -79,7 +79,7 @@ buttons.on("click", function(){
                 alert('postaraj się bardziej - Twoje punkty zostały anulowane');
                 countBad = 0;
                 points = 0;
-                $('#points').text('Twoje punkty:'+points);
+                $('#points').text(points);
             } 
         }
 
@@ -215,6 +215,7 @@ btn.on('click', function() {
     else {
         console.log('Zła odpowiedź');
            $('#icons1').animate({'left': '+=100px'}, 100).animate({'left': '-=100px'}, 100);
+        $('#icons1').animate({'right': '+=100px'}, 100).animate({'right': '-=100px'}, 100);
            $('#icons2').animate({'left': '+=100px'}, 100).animate({'left': '-=100px'}, 100);
     }
     

@@ -1,0 +1,19 @@
+header {
+    height: 70vh;
+    border: 1px solid green;
+    background-image: url('/images/math.png');
+    background: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#brain {
+    height: 40vh;
+    width: 39vh;
+}
+#logo {
+    height:  23vh;
+    width: 46vh;
+}

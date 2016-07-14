@@ -1,3 +1,59 @@
+/* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+header {
+  height: 70vh;
+  border: 1px solid green;
+  background-image: url("/images/math.png");
+  background: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+/* line 12, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+#brain {
+  height: 40vh;
+  width: 39vh; }
+
+/* line 16, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+#logo {
+  height: 23vh;
+  width: 46vh; }
+
+/* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+nav {
+  height: 30vh;
+  background-color: #FFEA2F;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+/* line 9, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+#points {
+  padding: 1vh; }
+
+/* line 12, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+#option2 {
+  width: 20vh;
+  height: 20vh;
+  border: 1px solid red; }
+
+/* line 17, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+#option1 {
+  width: 20vh;
+  height: 20vh;
+  border: 1px solid red;
+  background-image: url("/images/svg/blackboard.png"); }
+
+/* line 23, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+#points {
+  width: 20vh;
+  height: 20vh;
+  font-size: 5vh;
+  background-color: brown;
+  color: white; }
+
 /* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
 body {
   margin: 0 auto;
@@ -43,7 +99,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 30vh;
   position: relative;
   text-align: center; }
 
@@ -88,14 +144,6 @@ button {
   #text p {
     display: flex;
     font-size: 2em; }
-
-/* line 72, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
-#points {
-  width: 22vh;
-  height: 13vh;
-  font-size: 5vh;
-  background-color: brown;
-  color: white; }
 
 /* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #game2 {
