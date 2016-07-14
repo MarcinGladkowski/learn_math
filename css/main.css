@@ -80,8 +80,18 @@ nav {
   background-repeat: no-repeat; }
 
 /* line 58, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+.level2 {
+  width: 20vh;
+  height: 20vh;
+  background-image: url("../images/levels/professor.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+/* line 67, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 .sticky {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0; }
@@ -185,7 +195,8 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh; }
+  height: 100vh;
+  background-color: #FAE100; }
 
 /* line 8, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #box1 {

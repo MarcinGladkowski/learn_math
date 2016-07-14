@@ -23,6 +23,11 @@ function zmiana () {
   }
 };
 
+function scrollSec2() {
+    var game2pos = $('#game2').offset().top;
+}
+    
+    
 var randLoad = 0;
 function game1(){
     
@@ -81,16 +86,18 @@ buttons.on("click", function(){
             countGood += 1;
 //            write points in div
             $('#points').text(points);
-             if (countGood == 10) {
-                 alert('GRATULACJE - skończyłeś grę. Twoje punkty to:'+points);
+             if (countGood == 1) {
+//                 alert('GRATULACJE - skończyłeś grę. Twoje punkty to:'+points);
 //               reflesh animals (remove and load)
                  removeAnimals();
                  game1();
                  $('#points').text(points);
-                 $('#level').addClass('level2');
-                 
-//                 points = 0;
-                 
+//                 add student logo
+                 $('#level').attr('class', 'level1');
+//                  scroll to game2 2
+                 $('body').animate({
+                    scrollTop: $("#game2").offset().top
+                }, 4000);
               }
              } else {
 //            bad choice  
@@ -193,7 +200,7 @@ function plus() {
     var ans = $('#ans2');
     imgs1 = $('#icons1').find('img');
     imgs2 = $('#icons2').find('img');
-    ans.appendTo(imgs1, imgs2).css('height', '15vh').animate({opacity:0}, 4000);
+    ans.appendTo(imgs1, imgs2).css('height', '15vh').animate({opacity:0}, 3000);
 }
 function removeAns2() {
     $("#ans2").empty();
@@ -219,6 +226,19 @@ btn.on('click', function() {
             {'top': '-=100px'}, 100).animate(
             {'top': '+=100px'}, 100);
            
+    points += 1;
+    countGood += 1;
+    console.log(points);
+    console.log(countGood);
+//  write points in div
+    $('#points').text(points);
+           
+           $('#points').text(points);
+             if (countGood == 2) {
+//                  add professor logo
+                 $('#level').attr('class', 'level2');
+             }
+           
     removeNumber();
     removeElements();
     removeSign();
@@ -226,7 +246,6 @@ btn.on('click', function() {
            
            if ($('#sign').find('img').attr('id') == 'plus') {
               console.log('znak plus');
-              plus();
            }
             if ($('#sign').find('img').attr('id') == 'minus') {
                console.log('znak minus'); 

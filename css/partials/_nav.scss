@@ -55,8 +55,18 @@ nav {
     background-position: center center;
     background-repeat: no-repeat;
 }
+.level2 {
+    width: 20vh;
+    height: 20vh;
+//    border: 1px dotted green;
+    background-image: url("../images/levels/professor.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
    .sticky{
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
