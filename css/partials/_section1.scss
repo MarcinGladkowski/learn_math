@@ -1,5 +1,8 @@
 #game1 {
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 img {
     height: 13vh;
@@ -18,6 +21,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 30vh;
     #my_image {
         display: flex;
     }

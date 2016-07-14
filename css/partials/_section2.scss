@@ -9,7 +9,7 @@
     width: 52vh;
     height: 13vh;
     background: none;
-    border: 1px dotted red;
+//    border: 1px dotted red;
     display: flex;
 //    flex-direction: column;
     justify-content: center;
@@ -18,13 +18,13 @@
     display: flex;
     justify-content: center;
     position: relative;
-    border: 1px dotted blue;
+//    border: 1px dotted blue;
 }
 #icons2 {
     display: flex;
     justify-content: center;
     position: relative;
-    border: 1px dotted blue;
+//    border: 1px dotted blue;
 }
 #container2 {
     display: flex;
@@ -34,7 +34,7 @@
     height: 100vh;
     position: relative;
     text-align: center;
-    border: 1px dotted red;
+//    border: 1px dotted red;
 }
 #sign {
     display: flex;
@@ -46,7 +46,7 @@
     position: relative;
     height: 20vh;
     width: 100%;
-    border: 1px solid black;
+//    border: 1px solid black;
 }
 #countBtn {
     background: #428BCA;
@@ -65,7 +65,7 @@
     width: 10vh;
 }
 .text {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 input[type="text"]
 {

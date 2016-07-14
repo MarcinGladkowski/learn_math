@@ -1,5 +1,5 @@
 nav {
-    height: 30vh;
+    height: 25vh;
     background-color: #FFEA2F;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@ nav {
 #option2 {
     width: 20vh;
     height: 20vh;
-    border: 1px dotted red;
+//    border: 1px dotted red;
     background-image: url("../images/levels/blackboard.png");
     background-size: cover;
     background-position: center center;
@@ -21,7 +21,7 @@ nav {
 #option1 {
     width: 20vh;
     height: 20vh;
-    border: 1px dotted red;
+//    border: 1px dotted red;
     background-image: url("../images/levels/abacus.png");
     background-size: cover;
     background-position: center center;
@@ -31,14 +31,33 @@ nav {
     width: 20vh; 
     height: 20vh; 
     font-size: 8vh;
-    background-color: brown; 
+    background-color: orange; 
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#level {
+.level {
     width: 20vh;
     height: 20vh;
-    border: 1px dotted green;
+//    border: 1px dotted green;
+    background-image: url("../images/levels/boy.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.level1 {
+    width: 20vh;
+    height: 20vh;
+//    border: 1px dotted green;
+    background-image: url("../images/levels/student.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+   .sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }

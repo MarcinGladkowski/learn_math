@@ -1,13 +1,33 @@
-
+$(document).ready(function(){
+console.log('działa!');
 //load functions
 $(function(){
     game1();
     game2();
 });
-
+$(window).on('scroll', zmiana);
+//sticky nav
+var nav = $('nav');
+var top = nav.offset().top;
+console.log(nav);
+console.log(top);
+//Punkt 3 + 4
+function zmiana () {
+    var scrollT = $(document).scrollTop();
+    if( scrollT > top) {
+    nav.addClass('sticky')
+//    $('body').addClass('z-index');
+  } else {
+    nav.removeClass('sticky');
+//    $('body').addClass('z-index');
+  }
+};
 
 var randLoad = 0;
 function game1(){
+    
+    $('#level').addClass('level');
+    
     var ranNums=[];
 //    random quantity of elements
     randLoad = Math.floor((Math.random() * 10) + 1);
@@ -39,9 +59,9 @@ buttons.each(function(i){
        $(this).attr('index', i + 1);
 });
 
-var points = 0;
-var countBad = 0;
-var countGood = 0;
+var points = 0,
+    countBad = 0,
+    countGood = 0;
 
 buttons.on("click", function(){
         var a = $(this).attr('index');
@@ -66,8 +86,10 @@ buttons.on("click", function(){
 //               reflesh animals (remove and load)
                  removeAnimals();
                  game1();
-                 points = 0;
                  $('#points').text(points);
+                 $('#level').addClass('level2');
+                 
+//                 points = 0;
                  
               }
              } else {
@@ -222,3 +244,4 @@ btn.on('click', function() {
 
 });
 
+})
