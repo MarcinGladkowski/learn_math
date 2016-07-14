@@ -1,5 +1,10 @@
 $(document).ready(function(){
 console.log('działa!');
+
+$('body').delay(3000).animate({
+        scrollTop: $('nav').offset().top
+}, 4000);   
+    
 //load functions
 $(function(){
     game1();
@@ -20,6 +25,16 @@ function sticky () {
   }
 };
 
+$('#dyplom').hide();
+    
+//function showLevels (){
+//    var nav = $('nav');
+//    var dyplom = $('<div>');
+//    dyplom.attr('class', 'dyplom');
+//    dyplom.appendTo(dyp).css('display', 'flex').text('Gratulacje');
+//}
+    
+    
 function dyplom() {
     var dyp = $('#dyplom');
     var dyplom = $('<div>');
@@ -159,8 +174,7 @@ function game2() {
     }
     val1;
     val2;
-    summary = (operation(val1, val2, option[oper]));
-
+    summary = (operation(val1, val2, option[oper]))
 //    display icons row 1
      while(val1Array.length < val1){
         var n =Math.floor((Math.random()*30)+1);
@@ -217,10 +231,7 @@ var btn = $('#countBtn');
 var result = $('#result');
 
 btn.on('click', function() { 
-    
     console.log('Wpisany wynik: ' + result.val());
-    console.log(summary);
-    
        if (summary == result.val() ) {
            console.log('Dobra odpowiedź');
            $('#icons1').animate(
@@ -232,21 +243,18 @@ btn.on('click', function() {
            
     points += 1;
     countGood += 1;
-    console.log(points);
-    console.log(countGood);
 //  write points in div
-    $('#points').text(points);
-           
            $('#points').text(points);
              if (countGood == 2) {
 //                  add professor logo
                  $('#level').attr('class', 'level2');
              }
              if (countGood == 3) {
-                 console.log('dyplom');
+//               show section dyplom
+                 $('#dyplom').show('slow');
 //               create dyplom
                  dyplom();
-                 $('body').animate({
+                $('body').animate({
                     scrollTop: $("#dyplom").offset().top
                 }, 2000);
                 nav.hide('slow');
@@ -289,6 +297,10 @@ function endGame(){
         $('#points').text(points);
         alert('Zacznij jeszcze raz');
         console.log('Game over')
+        removeNumber();
+        removeElements();
+        removeAnimals();
+        removeSign();
         game1();
         game2(); 
         earseShow();
