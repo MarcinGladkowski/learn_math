@@ -17,8 +17,6 @@ function game1(){
         var n =Math.floor((Math.random()*30)+1);
             ranNums.push(n);
     }
-    var i=0;
-
     for (var i = 0; i < randLoad; i++) {
     var img = $('<img id="icon">');
     img.attr('src', 'images/svg/'+ranNums[i]+'.svg');
@@ -30,7 +28,7 @@ function game1(){
 function removeAnimals (){
     $("#imageDiv").empty();
 }
-function removeElemens (){
+function removeElements (){
     $("#icons1").empty();
     $("#icons2").empty();
 }
@@ -116,32 +114,20 @@ function game2() {
     
     var container = $('#box1');
     var lbl = $('#action');
-    lbl.text(val1 + ' ' + option[oper] + ' ' + val2 + ' = ');
+    lbl.text('Podaj sumę działania:').addClass('text');
     
-//    summary = (operation(val1, val2, option[oper]));
-    
-    
-    console.log('val1: ' + val1);
-    console.log('val2: ' + val2);
-    console.log('oper(1 = -)(0 = +): ' + oper);
-    
+//    lbl.text('Podaj sumę działania: ' + val1 + ' ' + option[oper] + ' ' + val2 + ' = ');
+
 //    action substrication
-    if (( oper == 1 ) && (val1 < val2))    {
+    if (( oper == 1 ) && (val1 < val2)) {
       [val1, val2] = [val2, val1];
-        console.log('val1 (-): ' + val1);
-        console.log('val2 (-): ' + val2);
         val1;
         val2;
     }
     val1;
     val2;
-    console.log('val1 po if: ' + val1);
-    console.log('val2 po if: ' + val2);
-    
     summary = (operation(val1, val2, option[oper]));
-    console.log('Wynik działania: ' + summary);
-    
-    lbl.text(val1 + ' ' + option[oper] + ' ' + val2 + ' = ');
+
 //    display icons row 1
      while(val1Array.length < val1){
         var n =Math.floor((Math.random()*30)+1);
@@ -152,13 +138,7 @@ function game2() {
     img.attr('src', 'images/svg2/'+val1Array[i]+'.svg');
     img.appendTo('#icons1').css('display', 'flex').css('height', '15vh');
 }
-//    sign between rows
-    if (oper == 0) {
-        $('#sign').text('+');
-    } 
-    if (oper == 1) {
-        $('#sign').text('-');
-    }
+
 //    display icons row 2
      while(val2Array.length < val2){
         var n =Math.floor((Math.random()*30)+1);
@@ -169,18 +149,45 @@ function game2() {
     img.attr('src', 'images/svg2/'+val2Array[i]+'.svg');
     img.appendTo('#icons2').css('display', 'flex').css('height', '15vh');
 }
-    
+//        sign between rows
+    if (oper == 0) {
+        var sign = $('#sign');
+        var signNew = $('<img id="svgSign"/>').attr('id','plus');
+        signNew.attr('src', 'images/svg3/plus.svg');
+        signNew.appendTo(sign);
+    } 
+    if (oper == 1) {
+        var sign = $('#sign');
+        var signNew = $('<img id="svgSign"/>').attr('id','minus');
+        signNew.attr('src', 'images/svg3/minus.svg');
+        signNew.appendTo(sign);
+    }
 }
+
 function removeNumber (){
-    $("#result").empty();
+    $("#result").val('');
+}
+function plus() {
+    var ans = $('#ans2');
+    imgs1 = $('#icons1').find('img');
+    imgs2 = $('#icons2').find('img');
+    ans.appendTo(imgs1, imgs2).css('height', '15vh').animate({opacity:0}, 4000);
+}
+function removeAns2() {
+    $("#ans2").empty();
+}
+function removeSign() {
+    $('#sign').empty();
 }
 
 var btn = $('#countBtn');
 var result = $('#result');
 
 btn.on('click', function() { 
+    
     console.log('Wpisany wynik: ' + result.val());
     console.log(summary);
+    
        if (summary == result.val() ) {
            console.log('Dobra odpowiedź');
            $('#icons1').animate(
@@ -189,15 +196,28 @@ btn.on('click', function() {
            $('#icons2').animate(
             {'top': '-=100px'}, 100).animate(
             {'top': '+=100px'}, 100);
-       } else {
-           console.log('Zła odpowiedź');
+           
+    removeNumber();
+    removeElements();
+    removeSign();
+    game2(); 
+           
+           if ($('#sign').find('img').attr('id') == 'plus') {
+              console.log('znak plus');
+              plus();
+           }
+            if ($('#sign').find('img').attr('id') == 'minus') {
+               console.log('znak minus'); 
+           }
+
+           
+    } 
+    else {
+        console.log('Zła odpowiedź');
            $('#icons1').animate({'left': '+=100px'}, 100).animate({'left': '-=100px'}, 100);
            $('#icons2').animate({'left': '+=100px'}, 100).animate({'left': '-=100px'}, 100);
-       
-       }
-    removeNumber();
-    removeElemens();
-    game2(); 
+    }
+    
 
 });
 

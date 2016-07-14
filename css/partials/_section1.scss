@@ -46,9 +46,17 @@ img {
 }
 
 button {
+    background: #428BCA;
+    color: #fff;
+    border: 1px solid #3071A9;
     width: 10vh;
     height: 8vh;
     font-size: 5vh;
+    transition: all 0.2s ease 0s;
+    &:hover {
+    background: #CF4647;
+    transform: scale(1.3);
+ }
 }
 #text {
     display: flex;

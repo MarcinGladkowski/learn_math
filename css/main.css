@@ -65,23 +65,31 @@ img {
 
 /* line 48, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
 button {
+  background: #428BCA;
+  color: #fff;
+  border: 1px solid #3071A9;
   width: 10vh;
   height: 8vh;
-  font-size: 5vh; }
+  font-size: 5vh;
+  transition: all 0.2s ease 0s; }
+  /* line 56, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  button:hover {
+    background: #CF4647;
+    transform: scale(1.3); }
 
-/* line 53, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 61, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
 #text {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   height: 20vh; }
-  /* line 59, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  /* line 67, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
   #text p {
     display: flex;
     font-size: 2em; }
 
-/* line 64, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 72, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
 #points {
   width: 22vh;
   height: 13vh;
@@ -103,7 +111,6 @@ button {
   background: none;
   border: 1px dotted red;
   display: flex;
-  flex-direction: column;
   justify-content: center; }
 
 /* line 17, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
@@ -126,7 +133,7 @@ button {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 50vh;
+  height: 100vh;
   position: relative;
   text-align: center;
   border: 1px dotted red; }
@@ -135,5 +142,48 @@ button {
 #sign {
   display: flex;
   justify-content: center; }
+
+/* line 43, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+#ans2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  border: 1px solid black; }
+
+/* line 51, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+#countBtn {
+  background: #428BCA;
+  color: #fff;
+  border: 1px solid #3071A9;
+  height: 10vh;
+  width: 20vh;
+  transition: all 0.2s ease 0s; }
+  /* line 58, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+  #countBtn:hover {
+    background: #CF4647;
+    transform: scale(1.3); }
+
+/* line 63, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+#result {
+  height: 10vh;
+  width: 10vh; }
+
+/* line 67, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+.text {
+  font-size: 2em; }
+
+/* line 70, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+input[type="text"] {
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+  background-color: #FFEA2F;
+  border: solid 2px #c9c9c9;
+  transition: border 0.3s; }
+  /* line 78, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+  input[type="text"].focus {
+    border: solid 5px #969696; }
 
 /*# sourceMappingURL=main.css.map */
