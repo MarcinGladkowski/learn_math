@@ -1,14 +1,10 @@
 $(document).ready(function(){
 console.log('działa!');
 
-//$('body').delay(2000).animate({
-//        scrollTop: $('nav').offset().top
-//}, 3000);   
-    
-
 $('#game1').hide();
 $('#game2').hide();
 $('#dyplom').hide();
+$('nav').hide();
     
 //load functions
 $(function(){
@@ -16,8 +12,6 @@ $(function(){
     game2(); 
     
 });
-    
-//$(window).on('scroll', sticky);
 //sticky nav
 var nav = $('nav');
 var top = nav.offset().top;
@@ -38,8 +32,6 @@ function sticky () {
   }
 };
 
-    
-
 function earse(){
    $('#error' + countBad).hide('slow');
 }
@@ -47,7 +39,6 @@ function earseShow(){
     for (var i=1; i<4; i++) {
         $('#error' + i).show('slow');
     }
-   
 }
 var randLoad = 0;
 function game1(){
@@ -67,8 +58,7 @@ function game1(){
     var img = $('<img id="icon">');
     img.attr('src', 'images/svg/'+ranNums[i]+'.svg');
     img.appendTo('#imageDiv').css('display', 'flex').css('height', '15vh');
-}
-
+    }
 }
 //end game1
 function removeAnimals (){
@@ -112,15 +102,26 @@ buttons.on("click", function(){
 //               reflesh animals (remove and load)
                  removeAnimals();
                  game1();
+                 
+                 $('#fir').animate({left: '-=20vh'},500);
+//                 $('.button').animate({left: '+=20vh'}, 1000);
+//                  show game2
                  $('#points').text(points);
 //                 add student logo
                  $('#level').attr('class', 'level1');
-//                  show game2
+                 
+//              
                  $('#game2').slideDown('slow');
+//                 $('#game1').slide('slow')
 //                  scroll to game2 2
                  $('body').animate({
                     scrollTop: $("#game2").offset().top
                 }, 2000);
+                 $('#option1').removeAttr('class', 'orange');
+                 $('#option2').attr('class', 'orange');
+                 $('#sec').delay(2000).animate({left: '+=20vh'},500);
+                 $('.close').attr('href', '#game2');
+                 
               }
              } else {
 //            bad choice  
@@ -133,7 +134,6 @@ buttons.on("click", function(){
         }
 
 });
-//53 x 45 fotele  , '*', '/'
 //game2  
 var option = ['+', '-'],
     operation = function(v1,v2, action) {
@@ -142,10 +142,6 @@ var option = ['+', '-'],
               break;
           case '-': return v1 - v2; 
               break;
-//          case '*': return v1 * v2; 
-//              break;
-//          case '/': return v1 / v2; 
-//              break;
     }
 };
 var val1 = 0;
@@ -184,7 +180,6 @@ function game2() {
     img.attr('src', 'images/svg2/'+val1Array[i]+'.svg');
     img.appendTo('#icons1').css('display', 'flex').css('height', '15vh');
 }
-
 //    display icons row 2
      while(val2Array.length < val2){
         var n =Math.floor((Math.random()*30)+1);
@@ -209,7 +204,6 @@ function game2() {
         signNew.appendTo(sign);
     }
 }
-
 function removeNumber (){
     $("#result").val('');
 }
@@ -225,7 +219,6 @@ function removeAns2() {
 function removeSign() {
     $('#sign').empty();
 }
-
 var btn = $('#countBtn');
 var result = $('#result');
 
@@ -239,7 +232,6 @@ btn.on('click', function() {
            $('#icons2').animate(
             {'top': '-=100px'}, 100).animate(
             {'top': '+=100px'}, 100);
-           
     points += 1;
     countGood += 1;
 //  write points in div
@@ -249,6 +241,7 @@ btn.on('click', function() {
                  $('#level').attr('class', 'level2');
              }
              if (countGood == 3) {
+                 $('#sec').animate({left: '-=20vh'},500);
 //               show section dyplom
                  $('#dyplom').show('slow');
 //               create dyplom
@@ -256,10 +249,8 @@ btn.on('click', function() {
                 $('body').animate({
                     scrollTop: $("#dyplom").offset().top
                 }, 1000);
-                nav.hide('slow');
-            
+                nav.fadeOut(1000);
              }
-           
     removeNumber();
     removeElements();
     removeSign();
@@ -271,17 +262,13 @@ btn.on('click', function() {
             if ($('#sign').find('img').attr('id') == 'minus') {
                console.log('znak minus'); 
            }
-
-           
     } 
     else {
 //      3 time bad choise - delete points 
         countBad += 1;
 //      remove earse
         earse();
-        
         endGame()
-        
         console.log('Zła odpowiedź');
            $('#icons1').animate({'left': '+=100px'}, 100).animate({'left': '-=100px'}, 100);
         $('#icons1').animate({'right': '+=100px'}, 100).animate({'right': '-=100px'}, 100);
@@ -318,17 +305,19 @@ $('#nameBtn').on('click', function()  {
 function dyplom() {
     var dyp = $('#dyplom');
     var dyplom = $('<div>');
-    var newGame = $('<button id="newGame"/>');
+    var newGame = $('<button id="play"/>');
     dyplom.attr('class', 'dyplom');
     dyplom.appendTo(dyp).css('display', 'flex').text('Gratulacje ' + userName + '!');
-//    newGame.append(dyplom).attr('class', 'newGame');
+    newGame.appendTo(dyp).text('Zagraj ponownie');
 }   
 $(window).on('scroll', sticky);
 
 $('#play').on('click', function(){
-    $('header').hide(2000);
-    $('#game1').slideDown('slow');
-   
-})     
+    $('header').slideUp(2000);
+    $('#game1').slideDown(2000);
+    $('nav').slideDown(2000);
+    $('#fir').delay(2000).animate({left: '+=20vh'}, 1000);
+    $('#option1').attr('class', 'orange');  
+});
     
-})
+});

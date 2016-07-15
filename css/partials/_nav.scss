@@ -39,14 +39,15 @@ nav {
     }
 }
 #points {
-    width: 20vh; 
-    height: 20vh; 
+    width: 15vh; 
+    height: 15vh; 
     font-size: 8vh;
     background-color: #FAE100; 
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5vh;
 }
 .level {
     width: 20vh;

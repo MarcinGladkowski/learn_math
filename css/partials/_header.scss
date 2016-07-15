@@ -23,8 +23,10 @@ header {
     height: 10vh;
     width: 40vh;
     transition: all 0.2s ease 0s;
-    &:hover {
+    border-radius: 2vh;
+        &:hover {
     background: #CF4647;
     transform: scale(1.3);
-}
+            
+    }
 }

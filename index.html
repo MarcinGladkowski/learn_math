@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/reset.css" type="text/css">
 <!--    main.css-->
     <link rel="stylesheet" href="css/main.css">
-    
+<!--  font-->
+   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <title></title>
 </head>
 <body>
@@ -16,7 +17,6 @@
 <div class='mainWidth'>
 
 <header>
-<!--    <h1>Learn<span>Math</span>.</h1>-->
 
  <img id='brain'src='./images/Brain.png'/>
  <img id='logo' src='./images/logo.png'/>
@@ -39,6 +39,21 @@
 <div id='head'>
    <img id="my_image" src='images/levels/abacus.png'></img>
 
+</div>
+<!--<div id="levels"></div>-->
+<a id='fir' class="button" href="#popup1">Poziomy</a>
+
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Poziomy</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<div><img src="images/levels/boy.svg"/><h1>5pkt</h1></div>
+			<div><img src="images/levels/student.svg"/><h1>10pkt</h1></div>
+			<div><img src="images/levels/professor.svg"/><h1>15pkt</h1></div>
+		</div>
+	</div>
 </div>
 
 <div id='container'>
@@ -76,8 +91,10 @@
        <div id='container2'>
 <div id='head'>
    <img id="my_image" src='images/levels/blackboard.png'></img>
-
 </div>      
+       
+<a id='sec' class="button" href="#popup1">Poziomy</a>
+       
         <div id='icons1'></div>
         <div id='sign'></div>
         <div id='icons2'></div>
@@ -104,8 +121,9 @@
     
 </div>
  
-
+<!--biblioteka-->
 <script src="./js/jquery-2.2.4.js" type="text/javascript"></script>
 <script src="./js/app.js" type="text/javascript"></script>
+
 </body>
 </html>

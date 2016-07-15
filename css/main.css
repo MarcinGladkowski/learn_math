@@ -26,8 +26,9 @@ header {
   border: 1px solid #3071A9;
   height: 10vh;
   width: 40vh;
-  transition: all 0.2s ease 0s; }
-  /* line 26, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+  transition: all 0.2s ease 0s;
+  border-radius: 2vh; }
+  /* line 27, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
   #play:hover {
     background: #CF4647;
     transform: scale(1.3); }
@@ -76,16 +77,17 @@ nav {
 
 /* line 41, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 #points {
-  width: 20vh;
-  height: 20vh;
+  width: 15vh;
+  height: 15vh;
   font-size: 8vh;
   background-color: #FAE100;
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-radius: 5vh; }
 
-/* line 51, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 52, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 .level {
   width: 20vh;
   height: 20vh;
@@ -94,7 +96,7 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
 
-/* line 60, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 61, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 .level1 {
   width: 20vh;
   height: 20vh;
@@ -103,7 +105,7 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
 
-/* line 69, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 70, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 .level2 {
   width: 20vh;
   height: 20vh;
@@ -112,7 +114,7 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
 
-/* line 78, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 79, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 .sticky {
   position: fixed;
   z-index: 1;
@@ -123,9 +125,10 @@ nav {
 /* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
 body {
   margin: 0 auto;
-  background-color: #FFEE55; }
+  background-color: #FFEE55;
+  font-family: 'Roboto Slab', serif; }
 
-/* line 5, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+/* line 6, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
 .mainWidth {
   max-width: 1200px;
   width: 100%;
@@ -222,24 +225,137 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  /* line 84, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  align-items: center;
+  border-radius: 3vh; }
+  /* line 85, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
   #nameBox p {
     font-size: 2em; }
-  /* line 87, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  /* line 88, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
   #nameBox #name {
     width: 80%; }
-  /* line 90, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  /* line 91, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
   #nameBox #nameBtn {
     background: #428BCA;
     color: #fff;
     width: 40%;
     height: 10vh;
     transition: all 0.2s ease 0s; }
-    /* line 96, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+    /* line 97, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
     #nameBox #nameBtn:hover {
       background: #CF4647;
       transform: scale(1.3); }
+
+/* line 104, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center; }
+
+/* line 115, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  background-color: orange;
+  text-decoration: none;
+  cursor: pointer;
+  position: fixed;
+  left: -20vh;
+  top: 50vh;
+  width: 20vh;
+  height: 10vh;
+  border-bottom-right-radius: 2vh;
+  border-top-right-radius: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 133, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.button:hover {
+  background-color: darkorange; }
+
+/* line 137, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1; }
+
+/* line 149, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.overlay:target {
+  visibility: visible;
+  opacity: 1; }
+
+/* line 154, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+  z-index: 999;
+  transition: all 5s ease-in-out; }
+
+/* line 165, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.popup h2 {
+  margin-top: 0;
+  color: #333; }
+
+/* line 169, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333; }
+
+/* line 179, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.popup .close:hover {
+  color: #06D85F; }
+
+/* line 182, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.popup .content {
+  max-height: 30%;
+  overflow: auto; }
+
+/* line 186, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+  /* line 190, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  .content div img {
+    height: 20vh;
+    width: 20vh; }
+  /* line 194, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  .content div h1 {
+    font-size: 2em; }
+
+/* line 198, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.lev {
+  width: 20vh;
+  height: 20vh;
+  border: 1px dotted red; }
+
+/* line 203, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+.orange {
+  background-color: orange;
+  border-radius: 2vh; }
 
 /* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #game2 {
@@ -343,10 +459,11 @@ input[type="text"] {
 #dyplom {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center; }
 
-/* line 97, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 98, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 .newGame {
   background: #428BCA;
   color: #fff;
@@ -354,9 +471,17 @@ input[type="text"] {
   height: 10vh;
   width: 20vh;
   transition: all 0.2s ease 0s; }
-  /* line 104, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+  /* line 105, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
   .newGame:hover {
     background: #CF4647;
     transform: scale(1.3); }
+
+/* line 110, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+.sticky {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0; }
 
 /*# sourceMappingURL=main.css.map */

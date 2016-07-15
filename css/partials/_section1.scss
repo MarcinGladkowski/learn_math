@@ -81,6 +81,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 3vh;
     p {
         font-size: 2em;
     }
@@ -100,3 +101,106 @@ button {
     }
 }
 
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  background-color: orange;
+  text-decoration: none;
+  cursor: pointer;
+  position: fixed; 
+  left: -20vh;
+  top: 50vh;
+  width: 20vh;
+  height: 10vh;
+  border-bottom-right-radius: 2vh;
+  border-top-right-radius: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  background-color: darkorange;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+  z-index: 999;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    div img {
+        height: 20vh;
+        width: 20vh;
+    }
+    div h1 {
+        font-size: 2em;
+    }
+}
+.lev {
+    width: 20vh;
+    height: 20vh;
+    border: 1px dotted red;
+}
+.orange {
+    background-color: orange;
+    border-radius: 2vh;
+}
