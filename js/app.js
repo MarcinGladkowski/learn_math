@@ -1,46 +1,45 @@
 $(document).ready(function(){
 console.log('działa!');
 
-$('body').delay(3000).animate({
-        scrollTop: $('nav').offset().top
-}, 4000);   
+//$('body').delay(2000).animate({
+//        scrollTop: $('nav').offset().top
+//}, 3000);   
+    
+
+$('#game1').hide();
+$('#game2').hide();
+$('#dyplom').hide();
     
 //load functions
 $(function(){
     game1();
     game2(); 
+    
 });
     
-$(window).on('scroll', sticky);
+//$(window).on('scroll', sticky);
 //sticky nav
 var nav = $('nav');
 var top = nav.offset().top;
+var top2 = $('#game1').offset().top;
+console.log(top);
+console.log(top2);
 
 function sticky () {
+    nav = $('nav');
+    top = nav.offset().top;
+    top2 = $('#game1').offset().top;
+    
     var scrollT = $(document).scrollTop();
-    if( scrollT > top) {
+    if( scrollT > top2) {
     nav.addClass('sticky')
   } else {
     nav.removeClass('sticky');
   }
 };
 
-$('#dyplom').hide();
     
-//function showLevels (){
-//    var nav = $('nav');
-//    var dyplom = $('<div>');
-//    dyplom.attr('class', 'dyplom');
-//    dyplom.appendTo(dyp).css('display', 'flex').text('Gratulacje');
-//}
-    
-    
-function dyplom() {
-    var dyp = $('#dyplom');
-    var dyplom = $('<div>');
-    dyplom.attr('class', 'dyplom');
-    dyplom.appendTo(dyp).css('display', 'flex').text('Gratulacje');
-}
+
 function earse(){
    $('#error' + countBad).hide('slow');
 }
@@ -80,7 +79,7 @@ function removeElements (){
     $("#icons2").empty();
 }
 
-var buttons = $('button');
+var buttons = $('#buttons').find('button');
 //add index for each button
 buttons.each(function(i){
        $(this).attr('index', i + 1);
@@ -109,17 +108,19 @@ buttons.on("click", function(){
 //            write points in div
             $('#points').text(points);
              if (countGood == 1) {
-//                 alert('GRATULACJE - skończyłeś grę. Twoje punkty to:'+points);
+//               
 //               reflesh animals (remove and load)
                  removeAnimals();
                  game1();
                  $('#points').text(points);
 //                 add student logo
                  $('#level').attr('class', 'level1');
+//                  show game2
+                 $('#game2').slideDown('slow');
 //                  scroll to game2 2
                  $('body').animate({
                     scrollTop: $("#game2").offset().top
-                }, 4000);
+                }, 2000);
               }
              } else {
 //            bad choice  
@@ -163,8 +164,6 @@ function game2() {
     var container = $('#box1');
     var lbl = $('#action');
     lbl.text('Podaj sumę działania:').addClass('text');
-    
-//    lbl.text('Podaj sumę działania: ' + val1 + ' ' + option[oper] + ' ' + val2 + ' = ');
 
 //    action substrication
     if (( oper == 1 ) && (val1 < val2)) {
@@ -253,11 +252,12 @@ btn.on('click', function() {
 //               show section dyplom
                  $('#dyplom').show('slow');
 //               create dyplom
-                 dyplom();
+//                 dyplom();
                 $('body').animate({
                     scrollTop: $("#dyplom").offset().top
-                }, 2000);
+                }, 1000);
                 nav.hide('slow');
+            
              }
            
     removeNumber();
@@ -305,6 +305,30 @@ function endGame(){
         game2(); 
         earseShow();
     }
-}    
+} 
+    
+var inputName = $('#name');
+var userName = inputName.val();
 
+$('#nameBtn').on('click', function()  {
+     userName = inputName.val();
+    $('#nameBox').hide(1000).delay(1000);
+     dyplom();
+})
+function dyplom() {
+    var dyp = $('#dyplom');
+    var dyplom = $('<div>');
+    var newGame = $('<button id="newGame"/>');
+    dyplom.attr('class', 'dyplom');
+    dyplom.appendTo(dyp).css('display', 'flex').text('Gratulacje ' + userName + '!');
+//    newGame.append(dyplom).attr('class', 'newGame');
+}   
+$(window).on('scroll', sticky);
+
+$('#play').on('click', function(){
+    $('header').hide(2000);
+    $('#game1').slideDown('slow');
+   
+})     
+    
 })

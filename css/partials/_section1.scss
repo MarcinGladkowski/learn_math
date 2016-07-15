@@ -30,7 +30,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 40vh;
     position: relative;
     text-align: center;
 }
@@ -73,3 +73,30 @@ button {
         font-size: 2em;
     }
 }
+#nameBox {
+    width: 60vh;
+    height: 30vh;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 2em;
+    }
+    #name {
+        width: 80%;
+    }
+    #nameBtn {
+        background: #428BCA;
+        color: #fff;
+        width: 40%;
+        height: 10vh;
+        transition: all 0.2s ease 0s;
+         &:hover {
+            background: #CF4647;
+            transform: scale(1.3);
+         }
+    }
+}
+

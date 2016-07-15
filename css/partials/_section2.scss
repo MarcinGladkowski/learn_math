@@ -9,9 +9,7 @@
     width: 52vh;
     height: 13vh;
     background: none;
-//    border: 1px dotted red;
     display: flex;
-//    flex-direction: column;
     justify-content: center;
 }
 #icons1 {
@@ -46,7 +44,6 @@
     position: relative;
     height: 20vh;
     width: 100%;
-//    border: 1px solid black;
 }
 #countBtn {
     background: #428BCA;
@@ -80,9 +77,8 @@ input[type="text"]
     }
 }
 .dyplom {
-    width: 50vh;
-    height: 30vh;
-//    border: 1px dotted green;
+    width: 80vh;
+    height: 68vh;
     background-image: url("../images/levels/diploma-3.svg");
     background-size: cover;
     background-position: center center;
@@ -97,4 +93,16 @@ input[type="text"]
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.newGame {
+    background: #428BCA;
+    color: #fff;
+    border: 1px solid #3071A9;
+    height: 10vh;
+    width: 20vh;
+    transition: all 0.2s ease 0s;
+    &:hover {
+    background: #CF4647;
+    transform: scale(1.3);
+}
 }

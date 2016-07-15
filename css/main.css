@@ -1,6 +1,6 @@
 /* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
 header {
-  height: 70vh;
+  height: 100vh;
   background-image: url("/images/math.png");
   background: cover;
   background-repeat: no-repeat;
@@ -9,15 +9,28 @@ header {
   flex-direction: column;
   align-items: center; }
 
-/* line 12, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+/* line 11, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
 #brain {
   height: 40vh;
   width: 39vh; }
 
-/* line 16, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+/* line 15, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
 #logo {
   height: 23vh;
   width: 46vh; }
+
+/* line 19, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+#play {
+  background: #428BCA;
+  color: #fff;
+  border: 1px solid #3071A9;
+  height: 10vh;
+  width: 40vh;
+  transition: all 0.2s ease 0s; }
+  /* line 26, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+  #play:hover {
+    background: #CF4647;
+    transform: scale(1.3); }
 
 /* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
 nav {
@@ -155,7 +168,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 40vh;
   position: relative;
   text-align: center; }
 
@@ -201,6 +214,33 @@ button {
     display: flex;
     font-size: 2em; }
 
+/* line 76, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+#nameBox {
+  width: 60vh;
+  height: 30vh;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  /* line 84, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  #nameBox p {
+    font-size: 2em; }
+  /* line 87, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  #nameBox #name {
+    width: 80%; }
+  /* line 90, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  #nameBox #nameBtn {
+    background: #428BCA;
+    color: #fff;
+    width: 40%;
+    height: 10vh;
+    transition: all 0.2s ease 0s; }
+    /* line 96, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+    #nameBox #nameBtn:hover {
+      background: #CF4647;
+      transform: scale(1.3); }
+
 /* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #game2 {
   display: flex;
@@ -217,19 +257,19 @@ button {
   display: flex;
   justify-content: center; }
 
-/* line 17, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 15, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #icons1 {
   display: flex;
   justify-content: center;
   position: relative; }
 
-/* line 23, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 21, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #icons2 {
   display: flex;
   justify-content: center;
   position: relative; }
 
-/* line 29, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 27, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #container2 {
   display: flex;
   justify-content: center;
@@ -239,12 +279,12 @@ button {
   position: relative;
   text-align: center; }
 
-/* line 39, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 37, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #sign {
   display: flex;
   justify-content: center; }
 
-/* line 43, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 41, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #ans2 {
   display: flex;
   justify-content: center;
@@ -252,7 +292,7 @@ button {
   height: 20vh;
   width: 100%; }
 
-/* line 51, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 48, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #countBtn {
   background: #428BCA;
   color: #fff;
@@ -260,21 +300,21 @@ button {
   height: 10vh;
   width: 20vh;
   transition: all 0.2s ease 0s; }
-  /* line 58, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+  /* line 55, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
   #countBtn:hover {
     background: #CF4647;
     transform: scale(1.3); }
 
-/* line 63, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 60, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #result {
   height: 10vh;
   width: 10vh; }
 
-/* line 67, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 64, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 .text {
   font-size: 1.5em; }
 
-/* line 70, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 67, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 input[type="text"] {
   font-size: 2em;
   text-align: center;
@@ -282,14 +322,14 @@ input[type="text"] {
   background-color: #FFEA2F;
   border: solid 2px #c9c9c9;
   transition: border 0.3s; }
-  /* line 78, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+  /* line 75, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
   input[type="text"].focus {
     border: solid 5px #969696; }
 
-/* line 82, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 79, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 .dyplom {
-  width: 50vh;
-  height: 30vh;
+  width: 80vh;
+  height: 68vh;
   background-image: url("../images/levels/diploma-3.svg");
   background-size: cover;
   background-position: center center;
@@ -299,11 +339,24 @@ input[type="text"] {
   justify-content: center;
   font-size: 2em; }
 
-/* line 95, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 91, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
 #dyplom {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center; }
+
+/* line 97, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+.newGame {
+  background: #428BCA;
+  color: #fff;
+  border: 1px solid #3071A9;
+  height: 10vh;
+  width: 20vh;
+  transition: all 0.2s ease 0s; }
+  /* line 104, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+  .newGame:hover {
+    background: #CF4647;
+    transform: scale(1.3); }
 
 /*# sourceMappingURL=main.css.map */

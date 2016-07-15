@@ -1,6 +1,5 @@
 header {
-    height: 70vh;
-//    border: 1px solid green;
+    height: 100vh;
     background-image: url('/images/math.png');
     background: cover;
     background-repeat: no-repeat;
@@ -16,4 +15,16 @@ header {
 #logo {
     height:  23vh;
     width: 46vh;
+}
+#play {
+    background: #428BCA;
+    color: #fff;
+    border: 1px solid #3071A9;
+    height: 10vh;
+    width: 40vh;
+    transition: all 0.2s ease 0s;
+    &:hover {
+    background: #CF4647;
+    transform: scale(1.3);
+}
 }
