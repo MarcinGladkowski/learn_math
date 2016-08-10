@@ -77,7 +77,8 @@ buttons.each(function(i){
 
 var points = 0,
     countBad = 0,
-    countGood = 0;
+    countGood = 0,
+    attempt = 0;
 
 buttons.on("click", function(){
         var a = $(this).attr('index');
@@ -92,12 +93,13 @@ buttons.on("click", function(){
 //            reflesh animals (remove and load)
             removeAnimals();
             game1();   
-                 
+            attempt += 1;     
             points += 1;
             countGood += 1;
 //            write points in div
             $('#points').text(points);
-             if (countGood == 1) {
+//                  7 attempts to next level
+             if (attempt == 7) {
 //               
 //               reflesh animals (remove and load)
                  removeAnimals();
@@ -108,8 +110,7 @@ buttons.on("click", function(){
 //                  show game2
                  $('#points').text(points);
 //                 add student logo
-                 $('#level').attr('class', 'level1');
-                 
+                 $('#level').attr('class', 'level1'); 
 //              
                  $('#game2').slideDown('slow');
 //                 $('#game1').slide('slow')
@@ -232,15 +233,16 @@ btn.on('click', function() {
            $('#icons2').animate(
             {'top': '-=100px'}, 100).animate(
             {'top': '+=100px'}, 100);
+    attempt += 1;
     points += 1;
     countGood += 1;
 //  write points in div
            $('#points').text(points);
-             if (countGood == 2) {
+             if (attempt == 15) {
 //                  add professor logo
                  $('#level').attr('class', 'level2');
              }
-             if (countGood == 3) {
+             if (countGood == 16) {
                  $('#sec').animate({left: '-=20vh'},500);
 //               show section dyplom
                  $('#dyplom').show('slow');
@@ -284,13 +286,7 @@ function endGame(){
         $('#points').text(points);
         alert('Zacznij jeszcze raz');
         console.log('Game over')
-        removeNumber();
-        removeElements();
-        removeAnimals();
-        removeSign();
-        game1();
-        game2(); 
-        earseShow();
+        location.reload();
     }
 } 
     
@@ -307,8 +303,11 @@ function dyplom() {
     var dyplom = $('<div>');
     var newGame = $('<button id="play"/>');
     dyplom.attr('class', 'dyplom');
-    dyplom.appendTo(dyp).css('display', 'flex').text('Gratulacje ' + userName + '!');
+    dyplom.appendTo(dyp).css('display', 'flex').text('Gratulacje ' + userName + '! Twój wynik to: ' + points + ' punktów');
     newGame.appendTo(dyp).text('Zagraj ponownie');
+    newGame.click(function() {
+    location.reload();
+});
 }   
 $(window).on('scroll', sticky);
 

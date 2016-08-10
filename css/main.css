@@ -1,7 +1,6 @@
-/* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+/* line 1, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_header.scss */
 header {
   height: 100vh;
-  background-image: url("/images/math.png");
   background: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -9,17 +8,17 @@ header {
   flex-direction: column;
   align-items: center; }
 
-/* line 11, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+/* line 10, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_header.scss */
 #brain {
   height: 40vh;
   width: 39vh; }
 
-/* line 15, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+/* line 14, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_header.scss */
 #logo {
   height: 23vh;
   width: 46vh; }
 
-/* line 19, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+/* line 18, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_header.scss */
 #play {
   background: #428BCA;
   color: #fff;
@@ -28,12 +27,12 @@ header {
   width: 40vh;
   transition: all 0.2s ease 0s;
   border-radius: 2vh; }
-  /* line 27, C:/Users/Marcin/Desktop/myProject/css/partials/_header.scss */
+  /* line 26, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_header.scss */
   #play:hover {
     background: #CF4647;
     transform: scale(1.3); }
 
-/* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 1, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_nav.scss */
 nav {
   height: 25vh;
   background-color: #FFEA2F;
@@ -42,11 +41,11 @@ nav {
   justify-content: space-around;
   align-items: center; }
 
-/* line 9, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 9, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_nav.scss */
 #points {
   padding: 1vh; }
 
-/* line 12, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 12, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_nav.scss */
 #option2 {
   width: 20vh;
   height: 20vh;
@@ -55,7 +54,7 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
 
-/* line 21, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 20, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_nav.scss */
 #option1 {
   width: 20vh;
   height: 20vh;
@@ -64,18 +63,18 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
 
-/* line 30, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 28, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_nav.scss */
 #lives {
   width: 60vh;
   height: 20vh;
   display: flex;
   align-items: center; }
-  /* line 36, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+  /* line 33, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_nav.scss */
   #lives img {
     width: 20vh;
     height: 20vh; }
 
-/* line 41, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 38, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_nav.scss */
 #points {
   width: 15vh;
   height: 15vh;
@@ -87,7 +86,7 @@ nav {
   align-items: center;
   border-radius: 5vh; }
 
-/* line 52, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 49, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_nav.scss */
 .level {
   width: 20vh;
   height: 20vh;
@@ -96,7 +95,7 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
 
-/* line 61, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 57, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_nav.scss */
 .level1 {
   width: 20vh;
   height: 20vh;
@@ -105,7 +104,7 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
 
-/* line 70, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 65, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_nav.scss */
 .level2 {
   width: 20vh;
   height: 20vh;
@@ -114,7 +113,7 @@ nav {
   background-position: center center;
   background-repeat: no-repeat; }
 
-/* line 79, C:/Users/Marcin/Desktop/myProject/css/partials/_nav.scss */
+/* line 73, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_nav.scss */
 .sticky {
   position: fixed;
   z-index: 1;
@@ -122,51 +121,51 @@ nav {
   left: 0;
   right: 0; }
 
-/* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+/* line 1, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_body.scss */
 body {
   margin: 0 auto;
   background-color: #FFEE55;
   font-family: 'Roboto Slab', serif; }
 
-/* line 6, C:/Users/Marcin/Desktop/myProject/css/partials/_body.scss */
+/* line 6, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_body.scss */
 .mainWidth {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto; }
 
-/* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 1, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 #game1 {
   height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column; }
 
-/* line 7, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 7, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 img {
   height: 13vh;
   width: 13vh; }
 
-/* line 11, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 11, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 #ans {
   display: flex;
   justify-content: center;
   flex-direction: row; }
-  /* line 15, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  /* line 15, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
   #ans ul {
     display: flex; }
 
-/* line 19, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 19, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 #head {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 20vh; }
-  /* line 25, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  /* line 25, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
   #head #my_image {
     display: flex; }
 
-/* line 29, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 29, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 #container {
   display: flex;
   justify-content: center;
@@ -175,14 +174,14 @@ img {
   position: relative;
   text-align: center; }
 
-/* line 37, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 37, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 #clickMe {
   display: flex;
   height: 8vh;
   width: 15vh;
   font-size: 5vh; }
 
-/* line 43, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 43, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 #imageDiv {
   display: flex;
   justify-content: center;
@@ -191,7 +190,7 @@ img {
   width: 70vw;
   position: relative; }
 
-/* line 52, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 52, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 button {
   background: #428BCA;
   color: #fff;
@@ -200,24 +199,24 @@ button {
   height: 8vh;
   font-size: 5vh;
   transition: all 0.2s ease 0s; }
-  /* line 60, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  /* line 60, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
   button:hover {
     background: #CF4647;
     transform: scale(1.3); }
 
-/* line 65, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 65, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 #text {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   height: 20vh; }
-  /* line 71, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  /* line 71, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
   #text p {
     display: flex;
     font-size: 2em; }
 
-/* line 76, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 76, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 #nameBox {
   width: 60vh;
   height: 30vh;
@@ -227,25 +226,25 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 3vh; }
-  /* line 85, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  /* line 85, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
   #nameBox p {
     font-size: 2em; }
-  /* line 88, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  /* line 88, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
   #nameBox #name {
     width: 80%; }
-  /* line 91, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  /* line 91, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
   #nameBox #nameBtn {
     background: #428BCA;
     color: #fff;
     width: 40%;
     height: 10vh;
     transition: all 0.2s ease 0s; }
-    /* line 97, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+    /* line 97, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
     #nameBox #nameBtn:hover {
       background: #CF4647;
       transform: scale(1.3); }
 
-/* line 104, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 104, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .box {
   width: 40%;
   margin: 0 auto;
@@ -256,7 +255,7 @@ button {
   background-clip: padding-box;
   text-align: center; }
 
-/* line 115, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 115, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .button {
   font-size: 1em;
   padding: 10px;
@@ -275,11 +274,11 @@ button {
   justify-content: center;
   align-items: center; }
 
-/* line 133, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 133, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .button:hover {
   background-color: darkorange; }
 
-/* line 137, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 137, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .overlay {
   position: fixed;
   top: 0;
@@ -292,12 +291,12 @@ button {
   opacity: 0;
   z-index: 1; }
 
-/* line 149, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 149, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .overlay:target {
   visibility: visible;
   opacity: 1; }
 
-/* line 154, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 154, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .popup {
   margin: 70px auto;
   padding: 20px;
@@ -308,12 +307,12 @@ button {
   z-index: 999;
   transition: all 5s ease-in-out; }
 
-/* line 165, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 165, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .popup h2 {
   margin-top: 0;
   color: #333; }
 
-/* line 169, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 169, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .popup .close {
   position: absolute;
   top: 20px;
@@ -324,40 +323,40 @@ button {
   text-decoration: none;
   color: #333; }
 
-/* line 179, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 179, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .popup .close:hover {
   color: #06D85F; }
 
-/* line 182, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 182, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .popup .content {
   max-height: 30%;
   overflow: auto; }
 
-/* line 186, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 186, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .content {
   display: flex;
   justify-content: center;
   flex-direction: row; }
-  /* line 190, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  /* line 190, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
   .content div img {
     height: 20vh;
     width: 20vh; }
-  /* line 194, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+  /* line 194, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
   .content div h1 {
     font-size: 2em; }
 
-/* line 198, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 198, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .lev {
   width: 20vh;
   height: 20vh;
   border: 1px dotted red; }
 
-/* line 203, C:/Users/Marcin/Desktop/myProject/css/partials/_section1.scss */
+/* line 203, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section1.scss */
 .orange {
   background-color: orange;
   border-radius: 2vh; }
 
-/* line 1, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 1, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 #game2 {
   display: flex;
   flex-direction: column;
@@ -365,7 +364,7 @@ button {
   height: 100vh;
   background-color: #FAE100; }
 
-/* line 8, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 8, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 #box1 {
   width: 52vh;
   height: 13vh;
@@ -373,19 +372,19 @@ button {
   display: flex;
   justify-content: center; }
 
-/* line 15, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 15, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 #icons1 {
   display: flex;
   justify-content: center;
   position: relative; }
 
-/* line 21, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 20, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 #icons2 {
   display: flex;
   justify-content: center;
   position: relative; }
 
-/* line 27, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 25, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 #container2 {
   display: flex;
   justify-content: center;
@@ -395,12 +394,12 @@ button {
   position: relative;
   text-align: center; }
 
-/* line 37, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 34, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 #sign {
   display: flex;
   justify-content: center; }
 
-/* line 41, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 38, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 #ans2 {
   display: flex;
   justify-content: center;
@@ -408,7 +407,7 @@ button {
   height: 20vh;
   width: 100%; }
 
-/* line 48, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 45, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 #countBtn {
   background: #428BCA;
   color: #fff;
@@ -416,21 +415,21 @@ button {
   height: 10vh;
   width: 20vh;
   transition: all 0.2s ease 0s; }
-  /* line 55, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+  /* line 52, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
   #countBtn:hover {
     background: #CF4647;
     transform: scale(1.3); }
 
-/* line 60, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 57, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 #result {
   height: 10vh;
   width: 10vh; }
 
-/* line 64, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 61, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 .text {
   font-size: 1.5em; }
 
-/* line 67, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 64, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 input[type="text"] {
   font-size: 2em;
   text-align: center;
@@ -438,14 +437,16 @@ input[type="text"] {
   background-color: #FFEA2F;
   border: solid 2px #c9c9c9;
   transition: border 0.3s; }
-  /* line 75, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+  /* line 72, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
   input[type="text"].focus {
     border: solid 5px #969696; }
 
-/* line 79, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 76, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 .dyplom {
   width: 80vh;
   height: 68vh;
+  padding: 0 20vh;
+  padding-bottom: 10vh;
   background-image: url("../images/levels/diploma-3.svg");
   background-size: cover;
   background-position: center center;
@@ -455,7 +456,7 @@ input[type="text"] {
   justify-content: center;
   font-size: 2em; }
 
-/* line 91, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 90, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 #dyplom {
   height: 100vh;
   display: flex;
@@ -463,7 +464,7 @@ input[type="text"] {
   align-items: center;
   justify-content: center; }
 
-/* line 98, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 97, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 .newGame {
   background: #428BCA;
   color: #fff;
@@ -471,12 +472,12 @@ input[type="text"] {
   height: 10vh;
   width: 20vh;
   transition: all 0.2s ease 0s; }
-  /* line 105, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+  /* line 104, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
   .newGame:hover {
     background: #CF4647;
     transform: scale(1.3); }
 
-/* line 110, C:/Users/Marcin/Desktop/myProject/css/partials/_section2.scss */
+/* line 109, C:/Users/Marcin/Desktop/learn_math-master/learn_math-master/css/partials/_section2.scss */
 .sticky {
   position: fixed;
   z-index: 1;

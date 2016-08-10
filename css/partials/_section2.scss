@@ -16,13 +16,11 @@
     display: flex;
     justify-content: center;
     position: relative;
-//    border: 1px dotted blue;
 }
 #icons2 {
     display: flex;
     justify-content: center;
     position: relative;
-//    border: 1px dotted blue;
 }
 #container2 {
     display: flex;
@@ -32,7 +30,6 @@
     height: 100vh;
     position: relative;
     text-align: center;
-//    border: 1px dotted red;
 }
 #sign {
     display: flex;
@@ -79,6 +76,8 @@ input[type="text"]
 .dyplom {
     width: 80vh;
     height: 68vh;
+    padding: 0 20vh;
+    padding-bottom: 10vh;
     background-image: url("../images/levels/diploma-3.svg");
     background-size: cover;
     background-position: center center;
